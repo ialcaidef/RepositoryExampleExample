@@ -1,10 +1,10 @@
-##DemostraciÛn de como usar el patrÛn de diseÒo Repository
+#Demostraci√≥n de como usar el patr√≥n de dise√±o Repository
 
-El patrÛn repositorio consiste en separar la lÛgica que recupera los datos y los asigna a un modelo de entidad de la lÛgica de negocios que act˙a sobre el modelo, esto permite que la lÛgica de negocios sea independiente del tipo de dato que comprende la capa de origen de datos, en pocas palabras un repositorio media entre el dominio y las capas de mapeo de datos, actuando como una colecciÛn de objetos de dominio en memoria (M. Fowler).
+El patr√≥n repositorio consiste en separar la l√≥gica que recupera los datos y los asigna a un modelo de entidad de la l√≥gica de negocios que act√∫a sobre el modelo, esto permite que la l√≥gica de negocios sea independiente del tipo de dato que comprende la capa de origen de datos, en pocas palabras un repositorio media entre el dominio y las capas de mapeo de datos, actuando como una colecci√≥n de objetos de dominio en memoria (M. Fowler).
 
-En el proyecto EntityFrameworkExample crearemos las Clases que implementan las Interfaces del repositorio genÈrico dentro de la carpeta ##Respositories##
+En el proyecto EntityFrameworkExample crearemos las Clases que implementan las Interfaces del repositorio gen√©rico dentro de la carpeta ##Respositories##
 
-## Clase IRepository.cs##
+### Clase IRepository.cs
 ~~~
     public interface IRepository
     {
@@ -15,7 +15,7 @@ En el proyecto EntityFrameworkExample crearemos las Clases que implementan las I
     }
 ~~~
 
-## Clase MyRepository.cs##
+### Clase MyRepository.cs
 ~~~
     public class MyRepository : IRepository
     {
@@ -52,7 +52,7 @@ En el proyecto EntityFrameworkExample crearemos las Clases que implementan las I
         }
     }
 ~~~
-En esta implementaciÛn crearÌamos un repositorio base que contendrÌa los mÈtodos del tÌpico CRUD (Create, Read, Update, Delete). que luegp ser·n utilizados por el controlador
+En esta implementaci√≥n crear√≠amos un repositorio base que contendr√≠a los m√©todos del t√≠pico CRUD (Create, Read, Update, Delete). que luegp ser√°n utilizados por el controlador
 
 ~~~
     public class PersonController : Controller
@@ -91,12 +91,12 @@ En esta implementaciÛn crearÌamos un repositorio base que contendrÌa los mÈtodos
     }
 ~~~
 
-##Conclusiones##
-Es posible que el concepto de ìRepositoryî estÈ pervertido hoy en dÌa, con respecto al concepto inicial. Pero se ha ido adaptando a los diferentes progresos de las plataformas y los lenguajes.
+###Conclusiones
+Es posible que el concepto de ‚ÄúRepository‚Äù est√© pervertido hoy en d√≠a, con respecto al concepto inicial. Pero se ha ido adaptando a los diferentes progresos de las plataformas y los lenguajes.
 
-Hay gente que no est· de acuerdo con el nombre de ìRepositoryî y que piensan que es simplemente un DAO. Aunque creo que no es del todo ni lo uno ni lo otro, simplemente coge algo de cada uno.
+Hay gente que no est√° de acuerdo con el nombre de ‚ÄúRepository‚Äù y que piensan que es simplemente un DAO. Aunque creo que no es del todo ni lo uno ni lo otro, simplemente coge algo de cada uno.
 
-Los objetos de este tipo son muy ˙tiles para desacoplar la aplicaciÛn y separar los datos del negocio de verdad. Adem·s nos proveen de una forma probada y que funciona para resolver este problema, sin que tengamos que inventar nada nuevo. Son f·ciles de probar y una abstracciÛn muy ˙til para proyectos grandes. AsÌ que si de verdad se implementa de forma que contenga la informaciÛn acerca del almacenamiento, quitando esa responsabilidad al resto de componentes, es una opciÛn muy v·lida.
+Los objetos de este tipo son muy √∫tiles para desacoplar la aplicaci√≥n y separar los datos del negocio de verdad. Adem√°s nos proveen de una forma probada y que funciona para resolver este problema, sin que tengamos que inventar nada nuevo. Son f√°ciles de probar y una abstracci√≥n muy √∫til para proyectos grandes. As√≠ que si de verdad se implementa de forma que contenga la informaci√≥n acerca del almacenamiento, quitando esa responsabilidad al resto de componentes, es una opci√≥n muy v√°lida.
 
-Pero evidentemente y como pasa con todos los patrones de diseÒo, hay que ceÒirse a las necesidades reales y no caer en los tÌpicos antipatrones de aplicarlo cuando no es necesario o aplicarlo de una forma que no resulta del todo correcta.
+Pero evidentemente y como pasa con todos los patrones de dise√±o, hay que ce√±irse a las necesidades reales y no caer en los t√≠picos antipatrones de aplicarlo cuando no es necesario o aplicarlo de una forma que no resulta del todo correcta.
 https://www.developerro.com/2013/01/07/patrones-de-diseo-repository/
