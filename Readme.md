@@ -1,4 +1,4 @@
-#Demostración de como usar el patrón de diseño Repository
+# Demostración de como usar el patrón de diseño Repository
 
 El patrón repositorio consiste en separar la lógica que recupera los datos y los asigna a un modelo de entidad de la lógica de negocios que actúa sobre el modelo, esto permite que la lógica de negocios sea independiente del tipo de dato que comprende la capa de origen de datos, en pocas palabras un repositorio media entre el dominio y las capas de mapeo de datos, actuando como una colección de objetos de dominio en memoria (M. Fowler).
 
@@ -91,7 +91,7 @@ En esta implementación crearíamos un repositorio base que contendría los mét
     }
 ~~~
 
-###Conclusiones
+### Conclusiones
 Es posible que el concepto de “Repository” esté pervertido hoy en día, con respecto al concepto inicial. Pero se ha ido adaptando a los diferentes progresos de las plataformas y los lenguajes.
 
 Hay gente que no está de acuerdo con el nombre de “Repository” y que piensan que es simplemente un DAO. Aunque creo que no es del todo ni lo uno ni lo otro, simplemente coge algo de cada uno.
